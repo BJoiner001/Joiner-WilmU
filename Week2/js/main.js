@@ -1,20 +1,31 @@
-//Class Singer to construct Singer objects. Takes name, DOB, and bestSongs variables.
-class Singer{
-    constructor(name,DOB,bestSongs){
-        this.name = name;
-        this.DOB = DOB;
-        this.bestSongs = bestSongs;
-    }
-}
-
-//Array singers holds the five Singer objects.
+//Array singers creates 5 JSON objects with name, DOB, and bestSongs variables.
 const singers = [
-    new Singer("Freddie Mercury", "9/5/1946", "Bohemian Rhapsody, Another One Bites the Dust, Killer Queen"),
-    new Singer("Pete Townshend", "5/19/1945", "Baba O'Riley, Won't Get Fooled Again, Behind Blue Eyes"),
-    new Singer("Lou Gramm", "5/2/1950", "Juke Box Hero, Urgent, Cold as Ice"),
-    new Singer("James Hetfield", "8/3/1963", "For Whom the Bell Tolls, Master of Puppets, One"),
-    new Singer("Sharon den Adel", "7/12/1974", "Stairway to the Skies, Shot in the Dark, Faster")
-];
+  {
+    "name": "Freddie Mercury",
+    "DOB": "9/5/1946",
+    "bestSongs": [" Bohemian Rhapsody", " Another One Bites the Dust", " Killer Queen"]
+  },
+  {
+    "name": "Pete Townshend",
+    "DOB": "5/19/1945",
+    "bestSongs": [" Baba O'Riley", " Won't Get Fooled Again", " Behind Blue Eyes"]
+  },
+  {
+    "name": "Lou Gramm",
+    "DOB": "5/2/1950",
+    "bestSongs": [" Juke Box Hero", " Urgent", " Cold as Ice"]
+  },
+  {
+    "name": "James Hetfield",
+    "DOB": "8/3/1963",
+    "bestSongs": [" For Whom the Bell Tolls", " Master of Puppets", " One"]
+  },
+  {
+    "name": "Sharon den Adel",
+    "DOB": "7/12/1974",
+    "bestSongs": [" Stairway to the Skies", " Shot in the Dark", " Faster"]
+  }
+]
 
 //Add event listener DOMContentLoaded to ensure the page has loaded prior to executing the JavaScript.
 document.addEventListener("DOMContentLoaded", () => {
